@@ -4,14 +4,38 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #f8f9fa;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navbar Active Link */
+/* ===== Navbar Fixed ===== */
+#mainNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background: linear-gradient(90deg,#000000,#2b0000);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Active Menu Item */
 .nav-link.active {
   color: #ffd166 !important;
 }
 
-/* Section Layout */
+/* ===== Hero Section ===== */
+.hero {
+  margin-top: 85px; /* Push under navbar */
+  background: linear-gradient(90deg,#1a0000,#000);
+  color: white;
+  padding: 140px 0;
+}
+.hero h1 span {
+  color: #ffd166;
+}
+
+/* ===== Section Layout ===== */
 section {
   padding: 90px 0;
 }
@@ -27,17 +51,7 @@ section {
   margin: 10px auto 30px;
 }
 
-/* Hero Section */
-.hero {
-  background: linear-gradient(90deg,#1a0000,#000);
-  color: white;
-  padding: 140px 0;
-}
-.hero h1 span {
-  color: #ffd166;
-}
-
-/* Buttons */
+/* ===== Buttons ===== */
 .btn-maroon {
   background-color: #800000;
   color: white;
@@ -55,8 +69,11 @@ section {
   background-color: #e3b74f;
   color: black;
 }
+.btn-sharp {
+  border-radius: 3px;
+}
 
-/* Skill Boxes */
+/* ===== Skill Boxes ===== */
 .skill-box {
   background: #111;
   color: white;
@@ -65,7 +82,7 @@ section {
   text-align: center;
 }
 
-/* Cards */
+/* ===== Cards ===== */
 .card-hover {
   transition: all 0.3s ease;
 }
@@ -74,11 +91,26 @@ section {
   box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Scroll to Top */
+/* ===== Scroll to Top Button ===== */
 #scrollTopBtn {
   z-index: 1000;
 }
 
-/* Reveal Animation */
+/* ===== Reveal Animation ===== */
 .reveal { opacity: 0; transform: translateY(20px); transition: .8s ease-in-out; }
 .reveal.show { opacity: 1; transform: translateY(0); }
+
+/* ===== Icon Pill ===== */
+.icon-pill {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background:#111;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
