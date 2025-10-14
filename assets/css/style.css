@@ -26,7 +26,7 @@ body {
 
 /* ===== Hero Section ===== */
 .hero {
-  margin-top: 75px; /* navbar ke neeche sahi spacing */
+
   background: linear-gradient(90deg,#1a0000,#000);
   color: white;
   padding: 120px 0 140px 0;
