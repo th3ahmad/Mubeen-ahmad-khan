@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="assets/logo3.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mubeen Ahmad Khan | Full Stack Web Developer</title>
-  <meta name="description" content="Portfolio of Mubeen Ahmad Khan, a Django Developer with 3+ years experience in PostgreSQL, DevOps, SEO, DNS, SSL. Based in Islamabad, Pakistan." />
-  <meta name="keywords" content="Mubeen Ahmad Khan, Django, Developer, Islamabad, PostgreSQL, DevOps, SEO, DNS, SSL, Bootstrap, JavaScript" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/logo3.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Primary SEO -->
+  <title>Mubeen Ahmad Khan – Django Developer Pakistan | Portfolio</title>
+  <meta name="description" content="Hire Mubeen Ahmad Khan — Django / Python Backend Developer from Islamabad, Pakistan. 3+ years experience in PostgreSQL, REST APIs, Linux/Nginx deploys, SSL, DNS & SEO." />
+  <meta name="keywords" content="Mubeen, Mubeen Ahmad, Mubeen Ahmad Khan, Django Developer, Python Developer, Islamabad, Pakistan, PostgreSQL, REST API, Nginx, SSL, DNS, SEO, Full Stack" />
   <meta name="author" content="Mubeen Ahmad Khan" />
   <link rel="canonical" href="https://mubeenahmadkhan.com/" />
-  <meta property="og:title" content="Mubeen Ahmad Khan — Django Developer" />
-  <meta property="og:description" content="Django | PostgreSQL | DevOps | SEO | DNS | SSL" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mubeen Ahmad Khan – Django Developer Pakistan | Portfolio" />
+  <meta property="og:description" content="Django | Python | PostgreSQL | REST APIs | Linux/Nginx | SSL | SEO | DNS" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-cover.jpg" />
   <meta property="og:url" content="https://mubeenahmadkhan.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mubeen Ahmad Khan – Django Developer Pakistan" />
+  <meta name="twitter:description" content="Backend Django Developer | PostgreSQL | REST APIs | Linux/Nginx | SSL | SEO | DNS" />
+  <meta name="twitter:image" content="assets/og-cover.jpg" />
+
+  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="iTcaz4a7UjuYTXHl-aLSjv2G4v7eZxBLUsVMxmJW-UA" />
-  
+
+  <!-- Styles -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Fix navbar overlap issue (no design change) */
+    body { padding-top: 80px; }
+    @media (max-width: 992px) { body { padding-top: 100px; } }
+    @media (max-width: 768px) { body { padding-top: 120px; } }
+    header#home { margin-top: 20px; }
+
+    /* Small accessibility boost without visual change */
+    .sr-only, .visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
+    @keyframes glowBlink { 0%,100% { opacity:1; box-shadow:0 0 15px #490404; } 50% { opacity:.5; box-shadow:0 0 5px #490404; } }
+  </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
 
@@ -27,68 +56,62 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-55ZLL65GH3');
 </script>
 
-
+  <!-- NAV -->
   <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top shadow">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">
-        <img src="assets/logo3.png" alt="MAK logo" width="50" height="50" class="me-2 rounded-circle ">
-        <strong style="font-family: 'Roboto', sans-serif; font-weight:700; color:#450404; letter-spacing:1px;">
-    M A K
-</strong>
+      <a class="navbar-brand fw-bold" href="#home" aria-label="Mubeen Ahmad Khan">
+        <img src="assets/logo3.png" alt="M A K logo" width="50" height="50" class="me-2 rounded-circle">
+        <strong style="font-family: 'Roboto', sans-serif; font-weight:700; color:#450404; letter-spacing:1px;">M A K</strong>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div id="navContent" class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav ">
-          <li class="nav-item"><a class="nav-link text-dark" style="font-family: 'Roboto', sans-serif; font-weight:700; color:#450404; letter-spacing:1px;" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#about" style="font-family: 'Roboto', sans-serif; font-weight:700; color:#450404; letter-spacing:1px;">About</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#skills" style="font-family: 'Roboto', sans-serif; font-weight:700; color:#450404; letter-spacing:1px;">Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#portfolio" style="font-family: 'Roboto', sans-serif; font-weight:700; color:#450404; letter-spacing:1px;">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#contact" style="font-family: 'Roboto', sans-serif; font-weight:700; color:#450404; letter-spacing:1px;">Contact</a></li>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-dark" style="font-family:'Roboto',sans-serif;font-weight:700;color:#450404;letter-spacing:1px;" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" style="font-family:'Roboto',sans-serif;font-weight:700;color:#450404;letter-spacing:1px;" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" style="font-family:'Roboto',sans-serif;font-weight:700;color:#450404;letter-spacing:1px;" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" style="font-family:'Roboto',sans-serif;font-weight:700;color:#450404;letter-spacing:1px;" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" style="font-family:'Roboto',sans-serif;font-weight:700;color:#450404;letter-spacing:1px;" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- HERO -->
   <header id="home" class="min-vh-100 d-flex align-items-center bg-light">
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-lg-6 text-center text-lg-start">
           <span class="badge" style="background:#800000;">Django | DevOps | SEO</span>
           <h1 class="display-5 fw-bold mt-3">Hi, I'm <span style="color:#800000;">Mubeen Ahmad Khan</span></h1>
+          <!-- Invisible SEO tagline (does not change design) -->
+          <div class="visually-hidden">Backend Django Developer | PostgreSQL | REST APIs</div>
+
           <p class="lead mb-4">Experienced Django Developer (3+ years)
 Backend REST APIs, PostgreSQL, and authentication systems
 Deploying production apps on Linux/Nginx environments
 SEO optimization, SSL security, and DNS management.</p>
-          <div class="d-flex gap-2 flex-wrap">
-            <style>
-  @keyframes glowBlink {
-    0%,100% { opacity: 1; box-shadow: 0 0 15px #490404; }
-    50% { opacity: 0.5; box-shadow: 0 0 5px #490404; }
-  }
-</style>
 
-<a href="#contact" class="btn btn-dark" style="animation: glowBlink 1.2s infinite; border:1px solid #420707;">
-  Hire Me
-</a>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#contact" class="btn btn-dark" style="animation: glowBlink 1.2s infinite; border:1px solid #420707;">Hire Me</a>
             <a href="#portfolio" class="btn text-white" style="background:#800000;">View Portfolio</a>
           </div>
         </div>
         <div class="col-lg-6">
-           <img src="assets/mubeen-ahmad-khan.jpg"
-       alt="Premium developer workspace"
-       class="img-fluid rounded shadow"
-       style="object-fit: contain; width: 100%; height: auto;">
+          <img src="assets/mubeen-ahmad-khan.jpg"
+               alt="Mubeen Ahmad Khan — Django Developer in Islamabad, Pakistan"
+               class="img-fluid rounded shadow"
+               style="object-fit: contain; width: 100%; height: auto;">
         </div>
       </div>
     </div>
   </header>
 
+  <!-- ABOUT -->
   <section id="about" class="py-5 bg-white">
     <div class="container">
       <div class="text-center mb-5">
@@ -97,23 +120,28 @@ SEO optimization, SSL security, and DNS management.</p>
       </div>
       <div class="row align-items-center g-4">
         <div class="col-md-5">
-          <img src="assets/about.jpg" alt="About Mubeen" class="img-fluid rounded shadow">
+          <img src="assets/about.jpg" alt="About — Django & Python developer profile of Mubeen Ahmad Khan" class="img-fluid rounded shadow">
         </div>
         <div class="col-md-7">
           <h3 class="fw-semibold">Django Developer • Islamabad</h3>
           <p class="mb-2">I build secure, SEO-friendly, high-performance web applications using Django + PostgreSQL, deployed on Linux/Nginx with HTTPS/SSL hardening.</p>
+
+          <!-- 🔥 SEO identity line (approved by you) -->
+          <p class="mb-2"><strong>Mubeen Ahmad Khan</strong> is a <strong>Django Developer</strong> from <strong>Islamabad, Pakistan</strong> specializing in <strong>PostgreSQL</strong>, <strong>REST APIs</strong>, <strong>Linux/Nginx deploys</strong>, and <strong>SEO-optimized development</strong>.</p>
+
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><strong>Experience:</strong> 3+ years</li>
             <li class="list-group-item"><strong>Core stack:</strong> Django, PostgreSQL, JS, Bootstrap</li>
             <li class="list-group-item"><strong>Ops:</strong> Linux, Nginx, SSL, DNS, CI/CD basics</li>
             <li class="list-group-item"><strong>Location:</strong> Islamabad, Pakistan</li>
-            <li class="list-group-item"><strong>Contact:</strong> <i class="fa-solid fa-envelope"></i><a href="mailto:mubeen.icit@gmail.com">mubeen.icit@gmail.com</a> <i class="fa-solid fa-phone"></i> <a href="tel:+923444898925">+92 344 4898925</a></li>
+            <li class="list-group-item"><strong>Contact:</strong> <i class="fa-solid fa-envelope"></i> <a href="mailto:mubeen.icit@gmail.com">mubeen.icit@gmail.com</a> <i class="fa-solid fa-phone"></i> <a href="tel:+923444898925">+92 344 4898925</a></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills" class="py-5" style="background:#000;">
     <div class="container text-center text-white">
       <h2 class="fw-bold">Skills</h2>
@@ -131,6 +159,7 @@ SEO optimization, SSL security, and DNS management.</p>
     </div>
   </section>
 
+  <!-- PORTFOLIO -->
   <section id="portfolio" class="py-5 bg-light">
     <div class="container">
       <div class="text-center mb-5">
@@ -141,7 +170,7 @@ SEO optimization, SSL security, and DNS management.</p>
       <div class="row g-4">
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img src="assets/project-1.jpg" class="card-img-top" alt="Django dashboards" />
+            <img src="assets/project-1.jpg" class="card-img-top" alt="Custom Django admin, role-based access & dashboards" />
             <div class="card-body">
               <h5 class="card-title">Django Admin & Dashboards</h5>
               <p class="card-text">Custom admin, role-based access, and KPI dashboards integrated with PostgreSQL.</p>
@@ -152,7 +181,7 @@ SEO optimization, SSL security, and DNS management.</p>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img src="assets/project-2.jpg" class="card-img-top" alt="Payments & SSL" />
+            <img src="assets/project-2.jpg" class="card-img-top" alt="Nginx reverse proxy, HTTPS, HSTS and payment integrations" />
             <div class="card-body">
               <h5 class="card-title">Payments & SSL Hardening</h5>
               <p class="card-text">Payment flows, Nginx reverse proxy, HTTPS, HSTS, and DNS optimizations.</p>
@@ -163,7 +192,7 @@ SEO optimization, SSL security, and DNS management.</p>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
-            <img src="assets/project-3.jpg" class="card-img-top" alt="SEO & performance" />
+            <img src="assets/project-3.jpg" class="card-img-top" alt="Core Web Vitals, sitemap, structured data & snippet improvements" />
             <div class="card-body">
               <h5 class="card-title">SEO & Performance</h5>
               <p class="card-text">Core Web Vitals, sitemaps, structured data, and search snippet improvements.</p>
@@ -173,6 +202,7 @@ SEO optimization, SSL security, and DNS management.</p>
           </div>
         </div>
       </div>
+
       <div class="p-4 mt-5 text-white rounded" style="background:#800000;">
         <div class="row align-items-center">
           <div class="col-md-8">
@@ -187,6 +217,7 @@ SEO optimization, SSL security, and DNS management.</p>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="py-5" style="background:#000;">
     <div class="container text-white">
       <div class="text-center mb-5">
@@ -199,13 +230,15 @@ SEO optimization, SSL security, and DNS management.</p>
             <h5 class="fw-semibold mb-3">Let's discuss your project</h5>
             <p class="mb-2"><strong>Email:</strong> <a class="link-light" href="mailto:mubeen.icit@gmail.com"><i class="fa-solid fa-envelope"></i> mubeen.icit@gmail.com</a></p>
             <p class="mb-2"><strong>Phone/WhatsApp:</strong> <a class="link-light" href="tel:+923444898925"><i class="fa-solid fa-phone"></i> +92 344 4898925</a></p>
-            <p class="mb-3"><strong>Location:</strong><i class="fa-solid fa-location"></i> Islamabad, Pakistan</p>
+            <p class="mb-3"><strong>Location:</strong> <i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</p>
             <div class="d-flex flex-wrap gap-2">
-              <a href="https://www.linkedin.com/in/mubeenahmadkhan" target="_blank" class="btn btn-outline-light btn-sm">LinkedIn</a>
-              <a href="https://x.com/mubeenahmad_dev" target="_blank" class="btn btn-outline-light btn-sm">X</a>
-              <a href="https://medium.com/@mubeenahmadkhan" target="_blank" class="btn btn-outline-light btn-sm">Medium</a>
-              <a href="https://www.instagram.com/mubeenahmadkhan.dev/" target="_blank" class="btn btn-outline-light btn-sm">Instagram</a>
-              <a href="https://www.facebook.com/mubeenahmadkhan.dev" target="_blank" class="btn btn-outline-light btn-sm">Facebook</a>
+              <a href="https://www.linkedin.com/in/mubeenahmadkhan" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">LinkedIn</a>
+              <a href="https://x.com/mubeenahmad_dev" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">X</a>
+              <a href="https://medium.com/@mubeenahmadkhan" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">Medium</a>
+              <a href="https://www.instagram.com/mubeenahmadkhan.dev/" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">Instagram</a>
+              <a href="https://www.facebook.com/mubeenahmadkhan.dev" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">Facebook</a>
+              <!-- 🔥 New: GitHub authority link -->
+              <a href="https://github.com/th3ahmad" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">GitHub</a>
             </div>
           </div>
         </div>
@@ -216,13 +249,17 @@ SEO optimization, SSL security, and DNS management.</p>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="bg-warning text-center text-white-50 py-3">
     <div class="container">
       <div class="small text-dark">© <span id="year"></span> <strong class="text-danger">Mubeen Ahmad Khan</strong> — All Rights Reserved.</div>
       <div class="small text-dark">Django • PostgreSQL • DevOps • SEO • DNS • SSL</div>
+      <!-- 🔥 New: Footer GitHub link (authority signal) -->
+      <div class="mt-1"><a class="text-dark small" href="https://github.com/th3ahmad" target="_blank" rel="me noopener">GitHub: @th3ahmad</a></div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -238,12 +275,17 @@ SEO optimization, SSL security, and DNS management.</p>
       });
     });
   </script>
+
+  <!-- JSON-LD: Person + WebSite + FAQ for rich results -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Mubeen Ahmad Khan",
+    "alternateName": ["Mubeen", "Mubeen Ahmad"],
     "jobTitle": "Django Developer",
+    "url": "https://mubeenahmadkhan.com/",
+    "image": "https://mubeenahmadkhan.com/assets/og-cover.jpg",
     "email": "mailto:mubeen.icit@gmail.com",
     "telephone": "+923444898925",
     "address": {
@@ -252,13 +294,52 @@ SEO optimization, SSL security, and DNS management.</p>
       "addressCountry": "PK"
     },
     "sameAs": [
+      "https://github.com/th3ahmad",
       "https://medium.com/@mubeenahmadkhan",
       "https://www.linkedin.com/in/mubeenahmadkhan",
       "https://www.instagram.com/mubeenahmadkhan.dev/",
       "https://www.facebook.com/mubeenahmadkhan.dev",
       "https://x.com/mubeenahmad_dev"
     ],
-    "url": "https://mubeenahmadkhan.com/"
+    "knowsAbout": ["Django", "Python", "PostgreSQL", "REST APIs", "Linux", "Nginx", "SSL", "SEO", "DNS", "GitHub Pages", "Bootstrap", "JavaScript"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://mubeenahmadkhan.com/",
+    "name":"Mubeen Ahmad Khan – Django Developer Pakistan",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://www.google.com/search?q=Mubeen+Ahmad+Khan+{search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Who is Mubeen Ahmad Khan?",
+        "acceptedAnswer":{"@type":"Answer","text":"A Django/Python backend developer from Islamabad, Pakistan with 3+ years of experience in PostgreSQL, REST APIs, Linux/Nginx deploys, SSL and SEO."}
+      },
+      {
+        "@type":"Question",
+        "name":"Does Mubeen work with international clients?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. Projects delivered for local (Pakistan) and international clients with production-grade deployments and SEO."}
+      },
+      {
+        "@type":"Question",
+        "name":"What tech stack does Mubeen use?",
+        "acceptedAnswer":{"@type":"Answer","text":"Django, Python, PostgreSQL, REST APIs, Bootstrap, JavaScript, deployed on Linux/Nginx with SSL, DNS and SEO best practices."}
+      }
+    ]
   }
   </script>
 </body>
