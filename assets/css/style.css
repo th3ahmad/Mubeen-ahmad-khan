@@ -26,10 +26,10 @@ body {
 
 /* ===== Hero Section ===== */
 .hero {
-  margin-top: 85px; /* Push under navbar */
+  margin-top: 75px; /* navbar ke neeche sahi spacing */
   background: linear-gradient(90deg,#1a0000,#000);
   color: white;
-  padding: 140px 0;
+  padding: 120px 0 140px 0;
 }
 .hero h1 span {
   color: #ffd166;
@@ -113,4 +113,7 @@ section {
   justify-content:center;
   font-size:18px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+html, body {
+  scroll-padding-top: 90px; /* Scroll offset fix */
 }
