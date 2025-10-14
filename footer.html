@@ -1,0 +1,38 @@
+<!-- ======= FOOTER ======= -->
+<footer class="text-center py-4" style="background:#111; color:#ccc;">
+  <div class="container">
+    <p class="mb-1">&copy; <span id="year"></span> <strong style="color:#ffd166;">Mubeen Ahmad Khan</strong> — All Rights Reserved.</p>
+    <p class="small mb-2">Django • PostgreSQL • REST APIs • DevOps • SSL • SEO</p>
+
+    <!-- Social Icons -->
+    <div class="d-flex justify-content-center gap-3 mb-3">
+      <a href="https://github.com/th3ahmad" target="_blank" class="text-light"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/mubeenahmadkhan" target="_blank" class="text-light"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/mubeenahmad_dev" target="_blank" class="text-light"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://medium.com/@mubeenahmadkhan" target="_blank" class="text-light"><i class="fab fa-medium"></i></a>
+    </div>
+
+    <p class="small">
+      <a href="mailto:mubeen.icit@gmail.com" class="text-warning text-decoration-none">mubeen.icit@gmail.com</a>
+    </p>
+  </div>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn" class="btn btn-warning position-fixed rounded-circle"
+          style="bottom:25px; right:25px; display:none; width:45px; height:45px;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</footer>
+<!-- ======= END FOOTER ======= -->
+
+<script>
+  // Auto year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Scroll to Top Button
+  const scrollBtn = document.getElementById("scrollTopBtn");
+  window.addEventListener("scroll", () => {
+    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+  scrollBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); });
+</script>

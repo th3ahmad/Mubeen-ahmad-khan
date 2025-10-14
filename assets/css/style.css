@@ -1,0 +1,84 @@
+/* ===== Global Style ===== */
+* { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+/* Navbar Active Link */
+.nav-link.active {
+  color: #ffd166 !important;
+}
+
+/* Section Layout */
+section {
+  padding: 90px 0;
+}
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-divider {
+  width: 100px;
+  height: 4px;
+  background: #800000;
+  margin: 10px auto 30px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(90deg,#1a0000,#000);
+  color: white;
+  padding: 140px 0;
+}
+.hero h1 span {
+  color: #ffd166;
+}
+
+/* Buttons */
+.btn-maroon {
+  background-color: #800000;
+  color: white;
+}
+.btn-maroon:hover {
+  background-color: #5a0000;
+  color: white;
+}
+.btn-yellow {
+  background-color: #ffd166;
+  color: #000;
+  font-weight: bold;
+}
+.btn-yellow:hover {
+  background-color: #e3b74f;
+  color: black;
+}
+
+/* Skill Boxes */
+.skill-box {
+  background: #111;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Cards */
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Scroll to Top */
+#scrollTopBtn {
+  z-index: 1000;
+}
+
+/* Reveal Animation */
+.reveal { opacity: 0; transform: translateY(20px); transition: .8s ease-in-out; }
+.reveal.show { opacity: 1; transform: translateY(0); }
